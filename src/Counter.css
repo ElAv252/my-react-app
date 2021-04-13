@@ -1,0 +1,14 @@
+.CounterButton {
+    background-color: cornflowerblue;
+    border: none;
+    border-radius: 3px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+/*.CounterButton:active{
+    background-color:   rgb(29, 108, 255);
+    transform:  rotateY(360deg);
+    transition: 0.3s;
+}*/

@@ -6,6 +6,26 @@ import * as obj1 from './components/Vars';
 import TodayTime from './TodayTime';
 import Component1 from './Component1';
 import Birthday from './Birthday';
+import CountUp from './CountUp';
+//import CountButton from './CountButton';
+import CountDown from './CountDown';
+import TodayTime2 from './TodayTime2';
+import InputViewer from './InputViewer';
+import MyDivContainer from './MyDivContainer';
+import Counter from './Counter';
+import Tr1 from './Tr1';
+import CountViewer from './CountViewer';
+import User1 from './User1';
+import ErrorBoundary from './ErrorBoundary';
+import CountUp2 from './CountUp2';
+import CyberAttack from './CyberAttack';
+import TableViewer from './TableViewer';
+import Card1 from './Card1';
+import ImagesCard from './ImagesCard';
+import MyContainerHOC from './MyContainerHOC';
+import InputProps from './InputProps';
+//import MainComponent from './MainComponent';
+import MyRouter from './MyRouter';
 
 function App() {
   console.log(obj1.bar)
@@ -72,6 +92,46 @@ function App() {
         <Component1 user={user2} />
         <br />
         <Birthday user={user3} />
+        <br />
+        <CountUp />
+        <br />
+        <MyContainerHOC />
+        <br />
+        <CountDown count={10} />
+        <br />
+        <TodayTime2 />
+        <br />
+        <InputViewer />
+        <br />
+        <MyDivContainer />
+        <br />
+        <Counter />
+        <br />
+        <table>
+          <tbody>
+            <Tr1 />
+          </tbody>
+        </table>
+        <br />
+        <CountViewer count={1} />
+        <br />
+        <ErrorBoundary>
+          <User1 name='david' />
+        </ErrorBoundary>
+        <br />
+        <CountUp2 />
+        <br />
+        <CyberAttack />
+        <br />
+        <TableViewer />
+        <br />
+        <Card1 imageSrc='https://picsum.photos/id/866/700/400' />
+        <br />
+        <ImagesCard />
+        <br />
+        {<InputProps Input={<input type="text" onChange={e => console.log(e.target.value)} />} />}
+        {/*<MainComponent />*/}
+        <MyRouter />
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -81,7 +141,7 @@ function App() {
           Learn React
         </a>
       </header>
-    </div>
+    </div >
   );
 }
 
